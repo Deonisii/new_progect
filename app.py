@@ -7,15 +7,6 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/user/<string:name>/<int:id>')
-def user(name, id):
-    return('user_page - ' + name + ' - '+ str(id))
-
-
-@app.route('/user_id')
-def user_id():
-    return render_template('user.html')
-
 
 @app.route('/sign')
 def sign():
